@@ -167,37 +167,35 @@ console.log(y === y);
 
 // let num = prompt ("Give me a number ");
 
-// switch (num){
-//     case (num < 50):
-//         console.log("Currently at number " + num + (". Terminating the loop"));
-
-//     case (num % 10 == 0):
-//         console.log("The number is divisible by 10. Skipping the number");
-
-
-//     case (num % 5 == 0):
-//         console.log(num/5);
-
-
-//     default:
-//         console.log("invalid input!");
-//         break;
+// if (isNaN (num || typeof parseInt(num) !== "number")){
+//     console.log("invalid input!");
 // }
+//     else if (num < 50){
+//         console.log("Currently at number " + num + (". Terminating the loop"));
+//     }
+//     else if (num % 10 == 0){
+//         console.log("The number is divisible by 10. Skipping the number");
+//     }
+
+//     else if (num % 5 == 0){
+//         console.log(num/5);
+//     }
+
 
 //Instruction 7
 
-let attempt = 3;
+// let attempt = 3;
 
-while (attempt > 0){
-    let user = prompt ("Enter a username or email");
-    let pass = prompt ("Enter a password");
+// while (attempt > 0){
+//     let user = prompt ("Enter a username or email");
+//     let pass = prompt ("Enter a password");
     
-    if (user == "student@mail.com" && pass == "discovery"){
-        alert ("SuccessFully Login")
-        break;
-    }
-    else{
-        attempt--;
-        alert ("Login Failed Now Only " + attempt + " Login Attempts Available")
-    }
-}
+//     if (user == "student@mail.com" && pass == "discovery"){
+//         alert ("SuccessFully Login")
+//         break;
+//     }
+//     else{
+//         attempt--;
+//         alert ("Login Failed Now Only " + attempt + " Login Attempts Available")
+//     }
+// }
