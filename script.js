@@ -1,5 +1,5 @@
 //TECHNICAL ASSESSMENT JAVASCRIPT
-//Instruction 2
+//Instruction 15
 console.log("connected");
 console.log("Hello World!");
 
@@ -109,32 +109,95 @@ console.log(y === y);
 // let userInput = prompt ("Give me a number");
 // console.log(addOrEven(userInput));
 
-//Intruction 5
+//Intruction 5 ================================================================
 
-let count = 0;
+// let count = 20;
 
-do{
-    console.log(count);
-    count++;
-}while (count <=20);
-
-//Stretch Goal
-
-function stretchCount (counts){
-if (isNaN (counts || typeof parseInt(counts) !== "number" || count<=20))
-{
-    return `It should be a number from 0-20`;
-}
-// else
+// while (count >= 0)
 // {
-//     do{
-//         console.log(counts);
-//         count++;
-//     }while (counts <=20);
+//     if (count % 2 == 0){
+//         console.log("even number " + count);
+//         count--;
+//     }
+//     else{
+//         console.log("odd number " + count);
+//         count--;
+//     }
 // }
+
+//Stretch
+
+// count = prompt ("Enter a number from 0 - 20")
+// while (count >= 0 && count <= 20)
+// {
+//     if (count % 2 == 0)
+//     {
+//         console.log("even number " + count);
+//         count--;
+//     }
+//     else if (count % 2 !== 0){
+//         console.log("odd number " + count);
+//         count--;
+//     }
+//     else
+//     {
+//         console.log("It should be a number from 0 - 20");
+//     }
+// }
+
+
+// switch(count){
+//     case (count % 2 == 0):
+//         console.log("even number " + count);
+//         count--;
+//         break;
+    
+//     case (count % 2 !== 0):
+//         console.log("odd number " + count);
+//         count--;
+//         break;
+        
+//     default:
+//         console.log("It should be a number from 0 - 20");
+//         break;
+
+// }
+
+//Instruction 6
+
+// let num = prompt ("Give me a number ");
+
+// switch (num){
+//     case (num < 50):
+//         console.log("Currently at number " + num + (". Terminating the loop"));
+
+//     case (num % 10 == 0):
+//         console.log("The number is divisible by 10. Skipping the number");
+
+
+//     case (num % 5 == 0):
+//         console.log(num/5);
+
+
+//     default:
+//         console.log("invalid input!");
+//         break;
+// }
+
+//Instruction 7
+
+let attempt = 3;
+
+while (attempt > 0){
+    let user = prompt ("Enter a username or email");
+    let pass = prompt ("Enter a password");
+    
+    if (user == "student@mail.com" && pass == "discovery"){
+        alert ("SuccessFully Login")
+        break;
+    }
+    else{
+        attempt--;
+        alert ("Login Failed Now Only " + attempt + " Login Attempts Available")
+    }
 }
-counts = prompt ("Give me a number from 0-20: ");
-console.log(stretchCount(counts));
-
-
-
