@@ -126,24 +126,28 @@ console.log(y === y);
 // }
 
 //Stretch
+//=============WORKING
+count = prompt ("Enter a number from 0 - 20")
+while (isNaN (count)){
+    count = prompt ("It should be a number from 0 - 20");
+}
+while (count > 20){
+    count = prompt ("It should be a number from 0 - 20");
+}
 
-// count = prompt ("Enter a number from 0 - 20")
-// while (count >= 0 && count <= 20)
-// {
-//     if (count % 2 == 0)
-//     {
-//         console.log("even number " + count);
-//         count--;
-//     }
-//     else if (count % 2 !== 0){
-//         console.log("odd number " + count);
-//         count--;
-//     }
-//     else
-//     {
-//         console.log("It should be a number from 0 - 20");
-//     }
-// }
+while (count >= 0 && count <= 20)
+{
+    if (count % 2 == 0)
+    {
+        console.log("even number " + count);
+        count--;
+    }
+    else if (count % 2 !== 0){
+        console.log("odd number " + count);
+        count--;
+    }
+}
+//=============WORKING
 
 
 // switch(count){
@@ -162,6 +166,24 @@ console.log(y === y);
 //         break;
 
 // }
+// count = prompt ("Enter a number from 0 - 20");
+
+// while (20 > count > 0){
+//     if (count % 2 == 0)
+//     {
+//         console.log("even number " + count);
+//         count--;
+//     }
+//     else (count % 2 !== 0)
+//         console.log("odd number " + count);
+//         count--;
+// }
+
+
+
+
+
+
 
 //Instruction 6
 
